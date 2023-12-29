@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+	<link rel="icon" type="image/png" href="images/fav_logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="icons/css/all.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/photoswipe.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main">
+	<div class="mainLeft">
+		<header class="header">
+			<div class="container-fluid navbar navbar-expand-lg justify-content-between align-items-center">
+				<div class="logo">
+					<a class="" href="#">
+						<img class="logoImg" src="images/logo.webp">
+					</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavMenu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end align-items-center" id="myNavMenu">
+					<ul class="navbar-nav align-items-center">
+						<li class="nav-item">
+							<a href="#about" class="nav-link">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#gallery" class="nav-link">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="#whychooseus" class="nav-link">Why Choose Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="#reviews" class="nav-link">Reviews</a>
+						</li>
+						<li class="nav-item">
+							<a href="#location" class="nav-link">Location</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<a href="javascript: void();" class="enquiryBtn btn btnLight" data-toggle="modal" data-target="#leadForm">Enquiry Now</a>
+		<section class="homeBannerImage">
+			<div class="bannerImageContainer">
+				<div class="bannerImage">
+					<img src="images/banner.jpg" alt="">
+				</div>
+			</div>
+			<div class="bannerForm">
+				<form class="wow animate__fadeInRight" method="POST">
+					<div class="heading text-center"><img class="mx-auto logoImg" src="images/logo.webp" width="145" height="100"></div>
+					<div class="bannerFormInputBox">
+						<label for="name">
+							Full Name<span class="text-danger">*</span>
+						</label>
+						<input id="name" name="userName" type="text" min="3" max="60" required>
+					</div>
+					<div class="bannerFormInputBox">
+						<label for="email">
+							Email<span class="text-danger">*</span>
+						</label>
+						<input type="email" name="userEmail" id="email" required>
+					</div>
+					<div class="bannerFormInputBox">
+						<label for="number">
+							Mobile Number<span class="text-danger">*</span>
+						</label>
+						<input type="text" name="phoneNumber" id="number" pattern="[0-9]{10}" title="Please enter 10 digit number" required>
+					</div>
+					<div class="bannerFormInputBox">
+						<input class="btn btnDark" type="submit" name="submit" value="Submit">
+					</div>
+				</form>
+			</div>
+		</section>
+		<div class="paddedContainer">
+			<section class="boxedSection">
+				<div class="container-fluid">
+					<div class="row align-items-center iconsContainer">
+						<div class="col-md-3 col-6 px-1 pl-2">
+							<div class="iconContainer">
+								<div class="iconBox">
+									<i class="fa-regular fa-id-card"></i>
+								</div>
+								<div class="iconContent">
+									<div class="iconTitle">Heading 1</div>
+									<div class="iconData">Lorem ipsum dolor, sit amet</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6 px-1">
+							<div class="iconContainer">
+								<div class="iconBox">
+									<i class="fa-solid fa-indian-rupee-sign"></i>
+								</div>
+								<div class="iconContent">
+									<div class="iconTitle">Heading 2</div>
+									<div class="iconData">Lorem ipsum dolor, sit amet.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6 px-1">
+							<div class="iconContainer">
+								<div class="iconBox">
+									<i class="fa-solid fa-building"></i>
+								</div>
+								<div class="iconContent">
+									<div class="iconTitle">Heading 3</div>
+									<div class="iconData">Lorem ipsum dolor sit amet.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-6 px-1">
+							<div class="iconContainer">
+								<div class="iconBox">
+									<i class="fa-solid fa-map-location-dot"></i>
+								</div>
+								<div class="iconContent">
+									<div class="iconTitle">Heading 4</div>
+									<div class="iconData">Lorem ipsum dolor sit, amet.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="boxedSection backgroundImage fixed" id="about">
+				<div class="container py-3">
+					<div class="row py-5">
+						<div class="col-md-12 text-center">
+							<div class="title wow animate__fadeInUp">
+								<p class="h1 fw700"><span class="colorPrimary">About</span> Us</p>
+							</div>
+							<div class="p-2 bg-white wow animate__fadeInUp text-justify">
+								<p> Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Accusantium molestias sequi harum voluptate! Et doloremque, corrupti laborum consequuntur facere sunt laboriosam voluptas magni. Magnam, molestiae? Ab eveniet, nesciunt dignissimos qui iusto, dolore quibusdam nostrum totam sit mollitia</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ea tenetur quisquam, cum, ducimus molestiae saepe consequuntur libero ab corporis reiciendis incidunt necessitatibus consequatur error, eligendi? Dignissimos, laudantium, rem delectus voluptas sit maiores perferendis omnis quas incidunt quod quia laborum eum earum, voluptatum! Asperiores tempore voluptatem voluptas eum, minus totam, eos animi unde repellendus nihil consectetur voluptate commodi possimus atque magnam velit deleniti veniam error similique laudantium. Libero sint ea quos, ad accusamus repellendus iure ducimus deserunt obcaecati incidunt voluptates?</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nemo atque, tempore, eligendi vel incidunt officiis esse earum, odit expedita natus officia facilis odio, optio voluptates! Explicabo, laboriosam corrupti aperiam, est quam eius. Blanditiis perspiciatis laborum impedit harum illum error dolor rerum sapiente, in molestiae repellat, ratione libero voluptates pariatur necessitatibus, eius alias quo nostrum fugiat, consequuntur dolorum veniam maxime obcaecati?</p>
+							</div>
+							<a href="#" class="downloadBtn mt-3 btn btnDark wow animate__fadeInUp" data-toggle="modal" data-target="#leadForm">Let Connect</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="boxedSection backgroundWhite" id="gallery">
+				<div class="container-fluid py-5 px-1">
+					<div class="row m-0">
+						<div class="col-12">
+							<div class="title text-center  wow animate__fadeInUp">
+								<div class="fw600">Our <span class="colorPrimary">Image </span> Gallery</div>
+							</div>
+							<div class="row align-items-center galleyImages galleyImagesCarousel  wow animate__fadeInUp">
+								<div class="col-lg-3 col-sm-6 px-1">
+									<a href="images/gallery_img_1.jpg" data-pswp-width="2500" data-pswp-height="1657"><img src="images/gallery_img_1.jpg" alt="Gallery Image 1"></a>
+								</div>
+								<div class="col-lg-3 col-sm-6 px-1">
+									<a href="images/gallery_img_2.jpg" data-pswp-width="2200" data-pswp-height="1469"><img src="images/gallery_img_2.jpg" alt="Gallery Image 2"></a>
+								</div>
+								<div class="col-lg-3 col-sm-6 px-1">
+									<a href="images/gallery_img_3.jpg" data-pswp-width="1440" data-pswp-height="1018"><img src="images/gallery_img_3.jpg" alt="Gallery Image 3"></a>
+								</div>
+								<div class="col-lg-3 col-sm-6 px-1">
+									<a href="images/gallery_img_4.jpg" data-pswp-width="1500" data-pswp-height="1001"><img src="images/gallery_img_4.jpg" alt="Gallery Image 4"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="boxedSection backgroundWhite" id="whychooseus">
+				<div class="container">
+					<div class="row py-5 align-items-center">
+						<div class="col-md-7 wow animate__fadeInLeft">
+							<div class="title">
+								<p class="h2 fw700"><span class="colorPrimary">Why Choose</span> Us</p>
+							</div>
+							<div class="">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui, molestias quae, nihil quam saepe adipisci magni deleniti reprehenderit reiciendis?</p>
+								<div class="p-2 highlightContainer">
+									<div class="highlightBox px-4">
+										<ul>
+											<li>Lorem ipsum dolor sit amet consectetur.</li>
+											<li>Lorem ipsum dolor sit amet consectetur.</li>
+											<li>Lorem ipsum dolor sit amet consectetur.</li>
+											<li>Lorem ipsum dolor sit amet consectetur.</li>
+											<li>Lorem ipsum dolor sit amet consectetur.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 pt-3 wow animate__fadeInRight">
+							<div class="aminitiesCarousel">
+								<div class="aminitiesGallerySlide">
+									<div class="imageContainer highlightSectionImage">
+										<img src="images/why_choose_Us.jpeg" alt="Why choose Us">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="boxedSection" id="reviews">
+				<div class="container py-5">
+					<div class="row align-items-center">
+						<div class="col-12 wow animate__fadeInUp">
+							<div class="title text-center ">
+								<div class="fw600"><span class="colorPrimary">Customers</span> Review</div>
+							</div>
+						</div>
+						<div class="col-md-12 wow animate__fadeInUp">
+							<div class="reviewCarousel">
+								<div class="reviewSlide">
+									<div class="reviewCard">
+										<div class="reviewByDetails d-flex">
+											<div class="reviewProfile"><img src="images/reviews/dhoni.png"></div>
+											<div class="reviewBy">
+												<div class="reviewByName boldText">Ms Dhoni</div>
+												<div class="reviewDate">1 years ago</div>
+											</div>
+										</div>
+										<div class="reviewStars">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+										</div>
+										<div class="reviewText">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Amet, illo! Labore, voluptas nesciunt officia. In, molestias saepe voluptates vero sapiente itaque? Temporibus at nesciunt, adipisci ratione dolorum repellendus odio ipsa!</div>
+									</div>
+								</div>
+								<div class="reviewSlide">
+									<div class="reviewCard">
+										<div class="reviewByDetails d-flex">
+											<div class="reviewProfile"><img src="images/reviews/rohit.png"></div>
+											<div class="reviewBy">
+												<div class="reviewByName boldText">Rohit Sharma</div>
+												<div class="reviewDate">9 months ago</div>
+											</div>
+										</div>
+										<div class="reviewStars">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+										</div>
+										<div class="reviewText">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Excepturi non fugiat quibusdam quasi, sunt expedita inventore nesciunt impedit molestiae optio asperiores nostrum eos iure ad consequuntur obcaecati commodi a ea. Asperiores, laboriosam? Id, est! Sed necessitatibus animi amet recusandae, officia, ullam, at eius nihil perferendis quam facere quae dolores cupiditate?</div>
+									</div>
+								</div>
+								<div class="reviewSlide">
+									<div class="reviewCard">
+										<div class="reviewByDetails d-flex">
+											<div class="reviewProfile"><img src="images/reviews/virat.png"></div>
+											<div class="reviewBy">
+												<div class="reviewByName boldText">Virat Kohli</div>
+												<div class="reviewDate">2 years ago</div>
+											</div>
+										</div>
+										<div class="reviewStars">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+										</div>
+										<div class="reviewText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus modi, necessitatibus consectetur hic, laboriosam, architecto quisquam minus magnam, accusamus iste. Impedit alias consequuntur doloribus, nemo earum soluta deleniti officiis.</div>
+									</div>
+								</div>
+								<div class="reviewSlide">
+									<div class="reviewCard">
+										<div class="reviewByDetails d-flex">
+											<div class="reviewProfile"><img src="images/reviews/bumrah.png"></div>
+											<div class="reviewBy">
+												<div class="reviewByName boldText">Jasprit Bumrah</div>
+												<div class="reviewDate">5 years ago</div>
+											</div>
+										</div>
+										<div class="reviewStars">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+											<img class="reviewStar" src="images/reviewStarFull.svg">
+										</div>
+										<div class="reviewText">Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Amet, illo! Labore, voluptas nesciunt officia. In, molestias saepe voluptates vero sapiente itaque? Temporibus at nesciunt, adipisci ratione dolorum repellendus odio ipsa!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="boxedSection backgroundTheme" id="location">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col p-0 wow animate__fadeInUp">
+							<div class="mapSection">
+							    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27451.440366291125!2d77.29779549281035!3d28.508011729719403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce65f77cae949%3A0x7c768dbb3f78e57!2sBadarpur%2C%20New%20Delhi%2C%20Delhi!5e1!3m2!1sen!2sin!4v1703852971169!5m2!1sen!2sin" width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="boxedSection wow animate__fadeInUp" id="contact">
+				<div class="container pt-5 pb-3">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="contactForm pt-0">
+								<div class="h5">Request a call back</div>
+								<form action="#" method="post">
+									<div class="contactFormInput">
+										<input type="text" name="userName" placeholder="Enter Name" required="">
+									</div>
+									<div class="contactFormInput">
+										<input type="email" name="userEmail" placeholder="Enter Email" required="">
+									</div>
+									<div class="contactFormInput">
+										<input type="text" name="phoneNumber" placeholder="Enter Mobile Number" pattern="[0-9]{10}" title="Please enter a 10 digit number" required="">
+									</div>
+									<div class="contactFormInput">
+										<textarea name="requiremets" placeholder="Enter Your Requirements" rows="4"></textarea>
+									</div>
+									<div class="">
+										<input class="btn btnWhite" name="submit" type="submit" value="Submit">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class=" h5">Contact Info:</div>
+							<div class="backgroundWhite highlightBox px-2 py-3 rounded shadow-sm">
+								<ul class="noListStyle">
+									<li class="pl-2">
+										<a href="tel:+910000000000">
+											<i class="fa-solid fa-phone"></i> +910000000000
+										</a>
+									</li>
+									<li class="pl-2">
+										<a href="mailto:xyz@gmail.com">
+											<i class="fa-solid fa-envelope"></i> xyz@gmail.com
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="boxedSection p-2 backgroundTheme" id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="copyRight">
+								@ Bhuwan. All Rights Reserved.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+
+	<div class="preloader"></div>
+
+	<div class="modal fade show" id="leadForm">
+		<div class="modal-dialog">
+			<form action="api.php" method="POST">
+				<div class="modal-content">
+					<div class="modal-header backgroundTheme">
+						<div class="modal-title">Send Us a message</div>
+						<button class="close" data-dismiss="modal"><i class="fa-solid fa-times"></i></button>
+					</div>
+					<div class="modal-body leadForm backgroundWhite">
+						<div class="">
+							<div class="bannerFormInputBox">
+								<input type="text" name="userName" placeholder="Name" required="">
+							</div>
+							<div class="bannerFormInputBox">
+								<input type="email" name="userEmail" placeholder="Email Address" required="">
+							</div>
+							<div class="bannerFormInputBox">
+								<input type="text" name="phoneNumber" placeholder="Mobile Number" pattern="[0-9]{10}" title="Please enter a 10 digit number" required="">
+							</div>
+							<div class="bannerFormInputBox">
+								<textarea name="requiremets" placeholder="Send us A message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="">
+							<input class="btn btnDark m-0" type="submit" name="submit" value="Submit Now">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<a class="callIcon" target="_blank" href="tel:+910000000000">
+		<img src="images/call_icon.webp" height="65px" width="65px">
+	</a>
+	<a class="whatsappIcon" target="_blank" href="https://wa.me/+917289976908">
+		<img src="images/whatsapp_icon.webp" height="65px" width="65px">
+	</a>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/photoswipe.umd.min.js"></script>
+	<script src="js/photoswipe-lightbox.umd.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
